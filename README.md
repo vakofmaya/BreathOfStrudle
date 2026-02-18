@@ -28,8 +28,24 @@ This course wouldn't exist without the people who built the instruments and the 
 
 ---
 
+## Philosophy
+
 > *"Music is the space between the notes."*
 > — Claude Debussy
+
+Electronic music didn't begin in a Berlin nightclub. It began wherever someone first asked: *can a machine make sound that moves people?*
+
+**The lineage is global.** In the 1940s and 50s, musique concrète (Paris) and elektronische Musik (Cologne) proved that recorded and synthesized sound could be art. By the 1960s, Robert Moog's synthesizer put those sounds into the hands of musicians. Kraftwerk fused it with pop. Detroit techno gave it soul. And the dance floor became a laboratory.
+
+**India was there from the start.** In the late 1960s, the **National Institute of Design (NID) in Ahmedabad** built one of the country's first electronic music studios, where composers like **Gita Sarabhai**, **I.S. Mathur**, and **Jinraj Joshipura** experimented with Moog synthesizers and tape machines — work recently rediscovered and released as the *NID Tapes: Electronic Music from India 1969–1972*. In 1982, **Charanjit Singh** released *Ten Ragas to a Disco Beat*, an album that fused Indian classical ragas with the Roland TB-303 — predating acid house by half a decade and now considered a proto-acid house classic worldwide.
+
+**Then came live coding.** The idea that *writing code* could be a performance — improvised, visible, vulnerable — emerged from the academic fringes (TOPLAP, founded 2004) and grew into **Algorave**, a global movement where programmers make music for dance floors in real time. The tools followed: **TidalCycles** (Haskell, by Alex McLean), **Sonic Pi**, **FoxDot**, and finally **Strudel** — which brought it all into the browser with zero setup.
+
+**India embraced it.** In 2018, **Algorave India** — founded by **Abhinay Khoparzi** and **Dhanya Pilo** — began organizing live coding concerts, workshops, and community events across the country, bridging computational art with India's deep musical traditions. Today, Indian live coders perform with Strudel, TidalCycles, and SuperCollider at venues and festivals that didn't exist a decade ago.
+
+This course exists at the intersection of all these threads: the experimental spirit of the NID studio, the rhythmic sophistication of Indian music, the radical transparency of live coding, and the accessibility of the browser. You're not just learning a tool — you're joining a lineage.
+
+---
 
 **Breath of Strudel** is a self-paced course that takes you from absolute zero to performing and producing complete electronic music — using nothing but [Strudel](https://strudel.cc/), a free, browser-based live coding environment. No software to install. No plugins to buy. Just open a tab and start making music.
 
@@ -455,7 +471,8 @@ $: s("crackle*2").density(0.03).gain(0.08)
 |----------|--------|
 | `Ctrl+Enter` | **Evaluate all code** — your "play/update" button |
 | `Ctrl+.` | **Hush** — stop all sound instantly (emergency stop) |
-| `Ctrl+Shift+Enter` | Evaluate current line/block only |
+
+> **Note:** Strudel evaluates *all* code at once — there is no block evaluation shortcut. To selectively mute parts, prefix a `$:` pattern with `_` (e.g. `_$: s("hh*8")`) to silence it.
 
 ### B. Common Drum Machine Banks
 
