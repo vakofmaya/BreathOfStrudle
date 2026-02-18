@@ -346,7 +346,8 @@ Create a pattern with kick, snare on beats 2 and 4, and hi-hats:
 <summary>Solution</summary>
 
 ```js
-s("bd ~ sd ~, hh*8")
+s("bd ~ bd ~, ~ sd ~ sd, hh*8")
+// Three layers: kick on beats 1 & 3, snare on beats 2 & 4, eight hi-hats
 // The ~ is a rest (silence) — you'll learn about this in Module 2
 ```
 </details>
