@@ -79,9 +79,16 @@ This is where you write code. It's a text editor with syntax highlighting. Your 
 | **Share** | Generate a shareable URL of your current code |
 | **Settings** | Adjust latency, volume, and other preferences |
 
-### The Visualization (bottom)
+### Visual Feedback (in the editor)
 
-Below the editor, Strudel shows a **pianoroll-style visualization** of your pattern — colored blocks representing events over time. This lets you *see* your pattern's structure.
+By default, Strudel provides **mini-notation highlighting** — as your pattern plays, the active parts of your mini-notation strings light up in the editor, so you can see which elements are triggering in real time. This is enabled automatically; no extra code needed.
+
+> [!TIP]
+> **Want a pianoroll?** It's not on by default, but you can add one with `.pianoroll()` (renders in the page background) or `._pianoroll()` (renders inline below your code). There's also `.punchcard()` / `._punchcard()` which is similar but reflects downstream transformations. See [Visual Feedback docs](https://strudel.cc/learn/visual-feedback/) for all options.
+>
+> ```js
+> s("bd sd hh cp").pianoroll()
+> ```
 
 ### Settings Worth Knowing
 
@@ -94,13 +101,20 @@ Click **Settings** (gear icon) and check:
 
 ## 1.4 Essential Keyboard Shortcuts
 
-These three shortcuts are everything you need to start:
+These two shortcuts are everything you need to start:
 
 | Shortcut | What It Does | When to Use |
 |----------|-------------|-------------|
-| **Ctrl+Enter** | **Evaluate** — run your code | After writing or changing any code |
+| **Ctrl+Enter** | **Evaluate** — run all your code | After writing or changing any code |
 | **Ctrl+.** | **Hush** — stop all sound immediately | When something sounds wrong, or to stop |
-| **Ctrl+Shift+Enter** | Evaluate current block only | When editing one section of multi-line code |
+
+> [!NOTE]
+> **No block evaluation.** Unlike TidalCycles, Strudel evaluates *all* code at once — there is no `Ctrl+Shift+Enter` to run a single block. To selectively mute parts of your code, prefix a `$:` pattern with `_` to silence it:
+>
+> ```js
+> $: s("bd*4")           // this plays
+> _$: s("hh*8").gain(0.4) // this is muted
+> ```
 
 > [!IMPORTANT]
 > **Practice `Ctrl+.` (hush) right now.** Make some sound, then press `Ctrl+.` to stop it. In a live performance, this is your emergency brake. Build the muscle memory.
@@ -214,7 +228,7 @@ This shows a real-time oscilloscope below your code. It's useful for:
 | Forgetting to press `Ctrl+Enter` | Nothing changes | Always evaluate after editing |
 | Writing `Bd` instead of `bd` | No sound (case-sensitive) | Use lowercase for sample names |
 | Missing closing quotes `"` | Error message | Always close your strings |
-| Using `=` instead of `:` | Error or wrong behavior | Use `:` for sample selection (`hh:2`) |
+| Using `=` instead of `:` | Error or wrong behavior | Use `:` to select a sample variant — e.g. `hh:2` plays the 3rd hi-hat variant (0-indexed). See Section 1.10 below. |
 | Putting two patterns without `$:` | Only the last one plays | Use `$:` for each independent pattern |
 | Audio doesn't start | Browser blocking audio | Click the Play button first, then `Ctrl+Enter` |
 
@@ -271,6 +285,31 @@ s("rim")          // rimshot
 s("cr")           // crash cymbal
 s("cb")           // cowbell
 ```
+
+### Selecting Sample Variants with `:`
+
+Many sample names have **multiple variants** — for example, the Sounds tab might show `RolandTR909_hh(4)`, meaning 4 different hi-hat recordings are available. By default, Strudel plays the first one (index 0).
+
+Use **`:N`** inside mini-notation to select a specific variant (0-indexed):
+
+```js
+// Play different hi-hat variants
+s("hh:0 hh:1 hh:2 hh:3")
+
+// Mix kick variants over a beat
+s("bd:0 bd:1 bd:0 bd:2")
+```
+
+You can also use the `.n()` function to achieve the same thing:
+
+```js
+// These two are equivalent:
+s("hh*8").bank("RolandTR909").n("0 1 2 3")
+s("hh:0 hh:1 hh:2 hh:3").bank("RolandTR909")
+```
+
+> [!NOTE]
+> Numbers that are too high wrap around. If a sample has 4 variants, `hh:5` plays the same as `hh:1`.
 
 ---
 
@@ -343,14 +382,15 @@ s("bd sd, hh*8").bank("RolandCR78")
 ## 1.12 Key Takeaways
 
 1. **Strudel runs in your browser** at [strudel.cc](https://strudel.cc/) — nothing to install
-2. **`Ctrl+Enter`** = evaluate (play/update), **`Ctrl+.`** = hush (stop)
+2. **`Ctrl+Enter`** = evaluate *all* code, **`Ctrl+.`** = hush (stop). There is no block evaluation — use `_$:` to mute individual patterns
 3. `s("bd sd hh cp")` plays four sounds in one **cycle** — the fundamental time unit
 4. Adding more events **subdivides** the cycle, it doesn't make it longer
 5. **Commas** layer patterns: `s("bd*4, hh*8")` plays both simultaneously
 6. **`$:`** creates independent patterns — use this for multi-element tracks
-7. `._scope()` shows a visual waveform
-8. If something breaks, press `Ctrl+.` — the old pattern keeps playing until you successfully evaluate new code
-9. Browse available sounds with the **Sounds** tab
+7. **Mini-notation highlighting** is the default visual feedback; add `.pianoroll()` or `._scope()` for more
+8. Use **`:N`** to select sample variants (`hh:0`, `hh:1`, etc.) or `.n()` for the same effect
+9. If something breaks, press `Ctrl+.` — the old pattern keeps playing until you successfully evaluate new code
+10. Browse available sounds with the **Sounds** tab
 
 ---
 
