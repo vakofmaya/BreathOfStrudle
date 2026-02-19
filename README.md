@@ -792,6 +792,85 @@ How to write melodies that work — from the five elements of a strong melody (c
 
 ---
 
+## How to Contribute
+
+This course is open source and grows with community input. Whether you spot a typo or want to write an entire new module — contributions are welcome.
+
+### Ways to Contribute
+
+| Contribution | Description | Difficulty |
+|-------------|-------------|------------|
+| 🐛 **Bug fixes & corrections** | Fix typos, broken code examples, inaccurate explanations | Easy |
+| 📝 **Improve existing content** | Clarify confusing sections, add better examples, expand explanations | Easy–Medium |
+| 🎯 **New exercises & challenges** | Add practice problems to existing modules | Medium |
+| 📦 **New sub-modules** | Add focused sections within existing modules (e.g., a granular synthesis deep-dive in Module 5) | Medium |
+| 📚 **New appendices** | Self-contained reference material (e.g., Appendix N — MIDI Mapping, Appendix O — Wavetable Design) | Medium–Hard |
+| 🆕 **New modules** | Full teaching modules covering new topics (e.g., collaborative live coding, visual output with Hydra) | Hard |
+| 🌍 **Translations** | Translate modules into other languages | Medium |
+| 🎨 **Design & UX** | Improve README formatting, navigation, diagrams, or visual aids | Easy–Medium |
+
+### Pull Request Workflow
+
+1. **Fork** the repository
+2. **Create a branch** for your change:
+   ```bash
+   git checkout -b fix/module-3-typo
+   # or
+   git checkout -b feature/appendix-wavetable-design
+   # or
+   git checkout -b content/module-5-granular-section
+   ```
+3. **Make your changes** — follow the existing style and structure
+4. **Test all code examples** — paste every code block into [strudel.cc](https://strudel.cc/) and verify it runs correctly
+5. **Submit a Pull Request** with a clear description of what you changed and why
+
+### Branch Naming Convention
+
+| Type | Prefix | Example |
+|------|--------|---------|
+| Bug fix / correction | `fix/` | `fix/module-8-chord-voicing` |
+| New content | `content/` | `content/module-5-granular-section` |
+| New module | `feature/` | `feature/module-13-collaborative-coding` |
+| New appendix | `feature/` | `feature/appendix-n-midi-mapping` |
+| Translation | `translate/` | `translate/module-1-spanish` |
+| Docs / formatting | `docs/` | `docs/readme-navigation` |
+
+### Guidelines
+
+> [!IMPORTANT]
+> **Every code example must work.** Paste it into [strudel.cc](https://strudel.cc/), press `Ctrl+Enter`, and confirm it produces the expected sound. Broken examples break trust.
+
+- **Match the voice.** The course is conversational, direct, and practical — not academic. Write like you're explaining to a friend.
+- **Show, don't just tell.** Every concept should have a runnable code example immediately after the explanation.
+- **One idea per section.** Don't cram multiple concepts into a single block.
+- **Use the `$:` pattern style** for multi-element examples (consistent with Modules 7–12 and the Final Project).
+- **Include `setcpm(128/4)`** in any example that relies on tempo.
+- **Add exercises** with solutions in `<details>` dropdowns when possible.
+
+### Commit Message Format
+
+```
+type(scope): short description
+
+Examples:
+fix(module-3): correct sawtooth filter cutoff value
+feat(appendix-n): add MIDI mapping reference guide
+content(module-5): add granular synthesis sub-section
+docs(readme): update module descriptions
+```
+
+### Got an Idea?
+
+Not ready to write a PR? **[Open an issue](https://github.com/vakofmaya/BreathOfStrudle/issues/new)** to suggest:
+- New topics you'd like covered
+- Sections that confused you
+- Features of Strudel the course doesn't cover yet
+- Genres you'd like a recipe for
+
+Every issue helps shape the course. 🙏
+
+---
+
 ## License
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
