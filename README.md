@@ -53,7 +53,7 @@
 #### `v0.0.3`
 
 [![GitHub tag](https://img.shields.io/github/v/tag/vakofmaya/BreathOfStrudle?style=flat-square&label=version&color=blueviolet)](https://github.com/vakofmaya/BreathOfStrudle/releases)
-[![License](https://img.shields.io/github/license/vakofmaya/BreathOfStrudle?style=flat-square&color=green)](https://github.com/vakofmaya/BreathOfStrudle)
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey?style=flat-square&logo=creativecommons)](https://creativecommons.org/licenses/by/4.0/)
 [![Platform](https://img.shields.io/badge/platform-strudel.cc-ff69b4?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjx0ZXh0IHk9IjIwIiBmb250LXNpemU9IjIwIj7wn461PC90ZXh0Pjwvc3ZnPg==)](https://strudel.cc/)
 [![Modules](https://img.shields.io/badge/modules-12%20%2B%20Final%20Project-blue?style=flat-square)](./README.md#course-modules)
 [![Difficulty](https://img.shields.io/badge/difficulty-beginner%20friendly-brightgreen?style=flat-square)](./README.md#who-this-course-is-for)
@@ -789,6 +789,16 @@ How to write melodies that work — from the five elements of a strong melody (c
 **Breath of Strudel** — *A → Z Electronic Music Production in the Browser*
 
 </div>
+
+---
+
+## License
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to **share** and **adapt** this material for any purpose, even commercially, as long as you give **appropriate credit**, provide a link to the license, and indicate if changes were made.
+
+[![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
 
 ---
 
