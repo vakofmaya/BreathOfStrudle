@@ -28,9 +28,7 @@ In Strudel:
 | Shortcut | Action |
 |----------|--------|
 | **Ctrl+Enter** | Evaluate all code |
-| **Ctrl+Shift+Enter** | Evaluate current line/block |
 | **Ctrl+.** | **Hush** — stop all sound instantly |
-| **Ctrl+/\`** | Toggle editor line numbers |
 
 The two most important:
 1. **Ctrl+Enter** — your "play/update" button. Every change you make takes effect when you press this.
@@ -372,7 +370,24 @@ note("c3 eb3 g3 bb3").osc()
 
 ---
 
-## 12.9 Visual Feedback
+## 12.9 Live Audio Input — `audioin()`
+
+Strudel can process **live audio** from your microphone or audio interface, enabling hybrid performances where you run real instruments through Strudel's pattern engine:
+
+```js
+// Process live input through Strudel's effects
+audioin().lpf(sine.range(200, 4000).slow(8)).room(0.3)
+
+// Rhythmic gating of live input
+audioin().struct("x ~ x ~ x ~ [x x] ~").gain(0.8)
+```
+
+> [!NOTE]
+> Your browser will ask for microphone permission. This works best with an external audio interface. For live performance, connect a synth, guitar, or microphone and process it through Strudel's filters, effects, and pattern engine in real time.
+
+---
+
+## 12.10 Visual Feedback
 
 ### Oscilloscope — `._scope()`
 
@@ -395,7 +410,7 @@ Strudel's REPL shows a pianoroll-style visualization by default, showing event p
 
 ---
 
-## 12.10 Advanced Performance Concepts
+## 12.11 Advanced Performance Concepts
 
 ### Pre-Mapped Variations
 
@@ -559,13 +574,13 @@ $: s("bd*4").bank("RolandTR909")
 
 ## 12.12 Practice Challenges
 
-### Challenge 1: 5-Minute Solo
+### Challenge 1: 5-Minute Solo ⭐⭐
 Time yourself for 5 minutes. Start with just a kick. Build up to a full groove by evaluating patterns one at a time. Practice creating a breakdown and bringing the energy back.
 
-### Challenge 2: Sound Swap
+### Challenge 2: Sound Swap ⭐
 While a full groove is playing, swap the drum machine from TR-909 to TR-808 in real time. Then swap back. Do it smoothly with no dead air.
 
-### Challenge 3: Live Filter Performance
+### Challenge 3: Live Filter Performance ⭐⭐
 While a bass is playing, manually change the `.lpf()` value and re-evaluate to create a "filter sweep":
 - Start at `lpf(200)`
 - Change to `lpf(400)`, evaluate
@@ -573,10 +588,10 @@ While a bass is playing, manually change the `.lpf()` value and re-evaluate to c
 - Change to `lpf(1600)`, evaluate
 - Back down: `lpf(800)`, `lpf(400)`, `lpf(200)`
 
-### Challenge 4: Error Recovery
+### Challenge 4: Error Recovery ⭐
 While performing, intentionally introduce a typo. Practice using Ctrl+. to hush, fixing the error, and smoothly restarting.
 
-### Challenge 5: Record a Set
+### Challenge 5: Record a Set ⭐⭐⭐
 Use your browser's audio recording tools (or screen recording) to capture a 10-minute live coded set. Listen back and identify areas for improvement.
 
 ---
@@ -623,7 +638,7 @@ You now have everything you need to:
 - Build complete track arrangements
 - Perform live
 
-Go to the **[Final Project](../README.md#final-project--a-complete-minimal-techno-track)** in the README to see a complete Minimal Techno track that demonstrates everything from all 12 modules.
+Go to the **[Final Project — Building a Complete Minimal Techno Track](./Final_Project_Complete_Track.md)** to put everything from all 12 modules together into a complete track.
 
 Then **make it your own.** Change the notes, swap the sounds, modify the groove — this is YOUR music now.
 

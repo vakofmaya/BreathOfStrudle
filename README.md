@@ -123,32 +123,34 @@ Song structure (intro, build, drop, breakdown, outro), transitions (filter sweep
 Each module builds on the previous ones. Follow them in order your first time through:
 
 ```
-Module 1    The Strudel Environment              ← Start here
+Module 1    The Strudel Environment              ← Start here         ~1 hour
    ↓
-Module 2    Cycles, Tempo & Mini-Notation        ← Understand time
+Module 2    Cycles, Tempo & Mini-Notation        ← Understand time    ~2 hours
    ↓
-Module 3    Synths & Oscillators                 ← Make raw sounds
+Module 3    Synths & Oscillators                 ← Make raw sounds    ~2 hours
    ↓
-Module 4    Subtractive Synthesis                ← Shape sounds with filters
+Module 4    Subtractive Synthesis                ← Shape sounds       ~3 hours
    ↓
-Module 5    Samples & Drum Machines              ← Use pre-made sounds
+Module 5    Samples & Drum Machines              ← Pre-made sounds    ~2 hours
    ↓
-Module 6    Envelopes & Dynamics                 ← Control sound over time
+Module 6    Envelopes & Dynamics                 ← Control over time  ~3 hours
    ↓
-Module 7    Building Core Sounds                 ← Design every element
+Module 7    Building Core Sounds                 ← Design elements    ~2 hours
    ↓
-Module 8    Writing Chords & Melodies            ← Add harmony and melody
+Module 8    Writing Chords & Melodies            ← Harmony & melody   ~3 hours
    ↓
-Module 9    Effects & Spatial Processing         ← Place sounds in space
+Module 9    Effects & Spatial Processing         ← Space & depth      ~3 hours
    ↓
-Module 10   Pattern Manipulation & Variation     ← Make patterns evolve
+Module 10   Pattern Manipulation & Variation     ← Evolve patterns    ~3 hours
    ↓
-Module 11   Structuring a Full Track             ← Arrange a complete song
+Module 11   Structuring a Full Track             ← Arrange a song     ~2 hours
    ↓
-Module 12   Live Performance Techniques          ← Perform your music
+Module 12   Live Performance Techniques          ← Perform live       ~2 hours
    ↓
-Final Project  Build a Complete Track            ← Put it all together
+Final Project  Build a Complete Track            ← Put it together    ~4 hours
 ```
+
+> **Total: ~32 hours** of hands-on learning. Most modules can be completed in one session.
 
 ### Tips for Beginners
 
@@ -516,11 +518,13 @@ $: s("crackle*2").density(0.03).gain(0.08)
 | **Conditional** | `.lastOf()`, `.firstOf()`, `.when()`, `.chunk()` |
 | **Signals** | `sine`, `cosine`, `saw`, `tri`, `square`, `rand`, `irand`, `perlin` |
 | **Structure** | `stack()`, `cat()`, `arrange()`, `$:` |
+| **Layer/Copy** | `.superimpose()`, `.off()` |
 | **Chords** | `chord()`, `.voicing()`, `.transpose()`, `.scaleTranspose()` |
 | **Samples** | `.begin()`, `.end()`, `.speed()`, `.chop()`, `.slice()`, `.splice()`, `.cut()` |
 | **Tempo** | `setcpm()`, `setcps()`, `.cpm()` |
 | **Swing** | `.swingBy()` |
 | **Control** | `hush`, `._scope()` |
+| **I/O** | `.midi()`, `.osc()`, `audioin()` |
 
 ### E. Resources
 
@@ -535,6 +539,156 @@ $: s("crackle*2").density(0.03).gain(0.08)
 | **AKWF Wavetables** | [adventurekid.se](https://www.adventurekid.se/akrt/waveforms/) |
 
 ---
+
+### F. Mixing & Gain Staging
+
+Good mixing is about **balance** — ensuring every element occupies its own space without fighting others. Here's a starting-point gain structure for Minimal Techno:
+
+| Element | Typical Gain | Why |
+|---------|-------------|-----|
+| **Kick** | 0.80–0.90 | Loudest element. The anchor everything else is mixed around. |
+| **Clap/Snare** | 0.60–0.70 | Clearly audible but not dominant |
+| **Bass** | 0.50–0.60 | Felt more than heard — keep below kick |
+| **Hi-Hats** | 0.30–0.50 | Groove, not attack. Let accent patterns provide dynamics |
+| **Pad** | 0.20–0.30 | Atmospheric — felt, not focused on |
+| **Lead/Melody** | 0.20–0.30 | Sparse notes + delay fill the space |
+| **Percussion** | 0.25–0.35 | Texture layer, not competing |
+| **Texture** | 0.05–0.10 | Almost subliminal — adds warmth/air |
+
+**Key principles:**
+- **Start with the kick** — set it at ~0.85, then mix everything else relative to it
+- **Sum it mentally** — 8 elements at high gain will clip. Keep non-kick elements moderate
+- **HPF everything except kick and bass** — `.hpf(200)` on pads, `.hpf(6000)` on hats removes low-end competition
+- **If it sounds muddy**, turn something *down* rather than turning the kick *up*
+- **Test on headphones AND speakers** — what sounds balanced on studio monitors may lack bass on earbuds
+
+---
+
+### G. Genre Variations
+
+The skills in this course transfer to other genres. Here's how to adapt the Final Project:
+
+**Deep House** (118–122 BPM)
+```js
+setcpm(120/4)
+// Slower, warmer. Use TR-808 kick, triangle bass, major chords
+```
+- Tempo: `setcpm(120/4)` instead of `setcpm(128/4)`
+- Kick: `.bank("RolandTR808")` for deep, boomy character
+- Bass: `triangle` instead of `sawtooth`, shorter filter envelope
+- Chords: Major or dominant 7th progressions
+
+**Dub Techno** (120–130 BPM)
+```js
+// Heavy reverb, long delays, stripped percussion
+.room(0.8).roomsize(0.95).roomlp(2000)
+.delay(0.6).delaytime(0.375).delayfeedback(0.7)
+```
+- Effects: Much more reverb and delay on everything
+- Percussion: Minimal — kick + sparse hats only
+- Chords: Short stabs with long reverb tails
+
+**Ambient** (no fixed tempo)
+```js
+setcps(0.1)  // very slow
+// No kick. Generative melodies. Long pads. Focus on texture.
+```
+- Remove the kick entirely
+- Long attack/release on everything
+- Use `perlin` signals for slow, organic evolution
+- Generative melodies with `irand` and heavy delay
+
+**Drum & Bass** (170–180 BPM)
+```js
+setcpm(174/4)
+// Breakbeat patterns, fast bass, Amen break slicing
+```
+- Tempo: `setcpm(174/4)` — much faster
+- Drums: Use `slice()` on breakbeats instead of individual hits
+- Bass: Heavier, with more `distort()` and faster filter envelopes
+
+---
+
+### H. Glossary
+
+| Term | Definition |
+|------|------------|
+| **ADSR** | Attack, Decay, Sustain, Release — the four phases of an envelope |
+| **BPM** | Beats Per Minute — the tempo of a track |
+| **Cutoff** | The frequency at which a filter begins attenuating sound |
+| **Cycle** | Strudel's fundamental time unit — one complete pass through a pattern |
+| **DAW** | Digital Audio Workstation (Ableton, FL Studio, etc.) |
+| **Envelope** | A shape that controls how a parameter changes over a note's lifetime |
+| **Filter** | Removes frequencies from a sound (LPF, HPF, BPF) |
+| **FM Synthesis** | Frequency Modulation — using one oscillator to modulate another's pitch |
+| **Formant** | Resonant frequencies of the human vocal tract (used in vowel filters) |
+| **Harmonics** | Overtones above the fundamental frequency that define timbre |
+| **LFO** | Low Frequency Oscillator — a signal used for modulation, not audio |
+| **Mini-notation** | Strudel's text-based pattern language inside quote marks |
+| **Orbit** | An independent audio bus with its own effects chain |
+| **Oscillator** | A circuit/algorithm that generates a repeating waveform |
+| **Resonance (Q)** | Boost at a filter's cutoff point — adds character and "squelch" |
+| **REPL** | Read-Eval-Print Loop — the interactive editor where you write code |
+| **Sample** | A short recording of sound, played back by a sampler |
+| **Sidechain** | Ducking one sound's volume in response to another (the "pump") |
+| **Subtractive Synthesis** | Starting with a harmonically rich sound and filtering to shape it |
+| **Timbre** | The tonal "color" or character of a sound (what makes a saw ≠ sine) |
+| **Transient** | The initial attack/click of a sound |
+| **Wavetable** | A single-cycle waveform looped to produce a pitched tone |
+
+---
+
+### I. Recording & Exporting Your Music
+
+Strudel runs in the browser and doesn't have a built-in "export to WAV" button. Here's how to capture your work:
+
+**Method 1: Browser Audio Recording (Simplest)**
+- Use a browser extension like [Chrome Audio Capture](https://chrome.google.com/webstore/detail/chrome-audio-capture) to record the tab's audio output directly
+- Or use **OBS Studio** (free) to capture system audio
+
+**Method 2: Screen Recording**
+- Use OBS or your OS's built-in screen recorder to capture both audio and the visual code performance
+- Great for sharing live coding sets on YouTube/social media
+
+**Method 3: Strudel's Share URL**
+- Click **Share** in the Strudel toolbar to generate a URL that encodes your entire code
+- Anyone with the URL can open and play your exact pattern
+- No audio file, but the code IS the music
+
+**Method 4: MIDI to a DAW**
+- Use `.midi()` to send your patterns to a DAW (Ableton, Reaper, etc.) via a virtual MIDI bus
+- Record the MIDI and render audio in the DAW with your own synth plugins
+- Best for production-quality output
+
+**Method 5: SuperCollider Backend**
+- If using [strudel-cli](https://github.com/tidalcycles/strudel) or a SuperCollider backend, you can record directly to WAV using SuperCollider's `s.record` function
+
+---
+
+### J. Concept Cross-Reference
+
+Looking for where a concept is first introduced vs. fully explained?
+
+| Concept | Introduced | Full Coverage |
+|---------|-----------|---------------|
+| Cycles & tempo | Module 1 (briefly) | Module 2 |
+| Mini-notation | Module 1 (basics) | Module 2 (complete) |
+| Oscillators / waveforms | Module 3 | Module 3 |
+| Filters (LPF/HPF/BPF) | Module 4 | Module 4 |
+| Filter envelopes | Module 4 | Module 6 (deep dive) |
+| Pitch envelopes | Module 3 (recipe) | Module 6 (full) |
+| ADSR envelopes | Module 3 (used) | Module 6 (explained) |
+| Samples & `.bank()` | Module 1 (preview) | Module 5 |
+| Kick drum design | Module 3 (recipe) | Module 7 (3 approaches) |
+| Sidechain ducking | Module 7 (preview) | Module 9 (full) |
+| Scales & chords | Module 3 (basics) | Module 8 (complete) |
+| Delay & reverb | Module 7 (used) | Module 9 (full) |
+| Pattern modifiers | Module 2 (EuclideanM) | Module 10 (complete) |
+| `superimpose` & `off` | — | Module 10 |
+| Track arrangement | — | Module 11 |
+| Live performance | — | Module 12 |
+| `audioin()` | — | Module 12 |
+| MIDI output | — | Module 12 |
 
 <div align="center">
 

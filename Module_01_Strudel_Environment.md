@@ -315,7 +315,7 @@ s("hh:0 hh:1 hh:2 hh:3").bank("RolandTR909")
 
 ## 1.11 Practice Challenges
 
-### Challenge 1: Four on the Floor
+### Challenge 1: Four on the Floor ⭐
 Write a pattern with a kick drum on every beat (4 per cycle):
 
 <details>
@@ -328,7 +328,7 @@ s("bd*4")
 ```
 </details>
 
-### Challenge 2: Basic Beat
+### Challenge 2: Basic Beat ⭐
 Add hi-hats (8 per cycle) on top of the four kicks:
 
 <details>
@@ -339,7 +339,7 @@ s("bd*4, hh*8")
 ```
 </details>
 
-### Challenge 3: Drum Pattern
+### Challenge 3: Drum Pattern ⭐⭐
 Create a pattern with kick, snare on beats 2 and 4, and hi-hats:
 
 <details>
@@ -352,7 +352,7 @@ s("bd ~ bd ~, ~ sd ~ sd, hh*8")
 ```
 </details>
 
-### Challenge 4: Two Independent Patterns
+### Challenge 4: Two Independent Patterns ⭐⭐
 Use `$:` to play a drum beat AND a bass note simultaneously:
 
 <details>
@@ -364,7 +364,7 @@ $: note("c2").s("sine")
 ```
 </details>
 
-### Challenge 5: Explore
+### Challenge 5: Explore ⭐
 Try at least 3 different samples from the Sounds browser. Play them in a pattern:
 
 <details>
@@ -395,4 +395,5 @@ s("bd sd, hh*8").bank("RolandCR78")
 
 ---
 
+**Previous:** [← Course Overview](./README.md)
 **Next:** [Module 2 — Cycles, Tempo & Mini-Notation →](./Module_02_Cycles_Tempo_MiniNotation.md)

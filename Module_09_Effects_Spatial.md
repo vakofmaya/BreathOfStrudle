@@ -96,13 +96,17 @@ note("c4 ~ ~ ~").s("triangle")
 
 ### Using Simple Fractions
 
-Alternatively, use fractional values which map to cycle fractions:
+You can also use JavaScript fraction expressions, which evaluate to decimal seconds. These happen to produce musically useful delay times:
 
 ```js
-// These are easier to remember
+// These are JavaScript math expressions that become seconds:
+// 1/8 = 0.125s, 3/16 = 0.1875s
 s("cp").delay(0.5).delaytime(1/8).delayfeedback(0.5)
 s("cp").delay(0.5).delaytime(3/16).delayfeedback(0.5)
 ```
+
+> [!NOTE]
+> **These are NOT cycle fractions** — `delaytime` always takes values in **seconds**. The expressions `1/8` and `3/16` are just JavaScript division that produces `0.125` and `0.1875` respectively. At 128 BPM these happen to align with useful subdivisions, but at other tempos you'll need to recalculate.
 
 ### Delay Patterns
 
@@ -395,6 +399,16 @@ $: s("bd*4").bank("RolandTR909")
 | `duckattack(t)` | Recovery time in seconds | `0.15` (snappy) – `0.3` (pumpy) |
 | `duckdepth(d)` | How much volume drops (0–1) | `0.8` (subtle) – `1` (full duck) |
 
+### Common Sidechain Mistakes
+
+| Mistake | Symptom | Fix |
+|---------|---------|-----|
+| Pad missing `.orbit(2)` | No pumping effect | Add `.orbit(2)` to the pad pattern |
+| Duck trigger uses wrong orbit | Pumps the wrong element (or nothing) | `.duckorbit(N)` must match the pad's `.orbit(N)` |
+| Forgot `.gain(0)` on trigger | Extra kick sound layered on top | The duck trigger must be silent — add `.gain(0)` |
+| Real kick missing | Only the silent trigger, no audible kick | You need TWO kick patterns: one audible, one silent trigger |
+| Pad and kick on same orbit (0) | Kick gets ducked too | Put pad on orbit 2, keep kick on default orbit 0 |
+
 ### Varying the Pump
 
 ```js
@@ -549,7 +563,7 @@ $: note("<[c4,eb4,g4] [bb3,d4,f4]>").s("sawtooth")
 
 ## 9.11 Practice Challenges
 
-### Challenge 1: Delay Echo
+### Challenge 1: Delay Echo ⭐
 Create a sparse 2-note melody where delay fills the gaps. The result should feel like a full melody even though only 2 notes are played per cycle:
 
 <details>
@@ -563,7 +577,7 @@ note("c4 ~ ~ ~, ~ ~ g4 ~").s("triangle")
 ```
 </details>
 
-### Challenge 2: Reverb Wash
+### Challenge 2: Reverb Wash ⭐⭐
 Create a pad that transitions from dry to fully wet reverb over 8 cycles:
 
 <details>
@@ -579,7 +593,7 @@ note("<[c4,eb4,g4]>").s("sawtooth")
 ```
 </details>
 
-### Challenge 3: Sidechain Pump
+### Challenge 3: Sidechain Pump ⭐⭐⭐
 Build a pad with a strong sidechain pump from the kick. The pump should be clearly audible:
 
 <details>
@@ -598,7 +612,7 @@ $: s("bd*4").bank("RolandTR909")
 ```
 </details>
 
-### Challenge 4: Stereo Mix
+### Challenge 4: Stereo Mix ⭐⭐
 Create a multi-element pattern where each element has appropriate panning:
 
 <details>
@@ -616,7 +630,7 @@ $: s("rim(5,16)").bank("RolandTR909")
 ```
 </details>
 
-### Challenge 5: Effects Chain
+### Challenge 5: Effects Chain ⭐⭐⭐
 Design a bass sound that uses distortion, filter, AND delay together:
 
 <details>

@@ -405,7 +405,7 @@ arrange(
 
 ## 11.9 Practice Challenges
 
-### Challenge 1: 32-Bar Mini-Track
+### Challenge 1: 32-Bar Mini-Track ⭐⭐
 Using `arrange()`, create a 32-bar track with:
 - 8 bars intro (kick only)  
 - 8 bars full groove
@@ -431,7 +431,7 @@ arrange(
 ```
 </details>
 
-### Challenge 2: Build a Transition
+### Challenge 2: Build a Transition ⭐⭐⭐
 Create an 8-bar buildup using filter sweeps, a snare roll, and a riser:
 
 <details>
@@ -452,7 +452,7 @@ stack(
 ```
 </details>
 
-### Challenge 3: Additive Live Arrangement
+### Challenge 3: Additive Live Arrangement ⭐⭐
 Write a complete track template using `$:` patterns with comments indicating when to add each element:
 
 <details>

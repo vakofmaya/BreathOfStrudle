@@ -524,7 +524,7 @@ stack(
 
 ## 6.9 Practice Challenges
 
-### Challenge 1: Envelope Ear Training
+### Challenge 1: Envelope Ear Training ⭐
 Play `note("c3").s("sawtooth")` with the following envelopes and describe what each sounds like (pluck? pad? stab? breath?):
 1. `.attack(0).decay(0.1).sustain(0)`
 2. `.attack(0.5).decay(0).sustain(1).release(0.5)`
@@ -540,7 +540,7 @@ Play `note("c3").s("sawtooth")` with the following envelopes and describe what e
 4. **Organ** — instant on, instant off, full volume while held
 </details>
 
-### Challenge 2: Design a Kick
+### Challenge 2: Design a Kick ⭐⭐
 Create a kick drum using only `sine` + `penv` + amplitude envelope. Goal: a kick that has a clear "click" attack and a deep "boom" body lasting about 300ms.
 
 <details>
@@ -554,7 +554,7 @@ note("c1!4").s("sine")
 ```
 </details>
 
-### Challenge 3: Two-Envelope Bass
+### Challenge 3: Two-Envelope Bass ⭐⭐⭐
 Create a bass using BOTH amplitude and filter envelopes. The filter should open on each note attack and close quickly.
 
 <details>
@@ -570,7 +570,7 @@ note("c2 c2 <eb2 f2> c2").s("sawtooth")
 ```
 </details>
 
-### Challenge 4: Dynamic Drums
+### Challenge 4: Dynamic Drums ⭐⭐
 Create a drum pattern with a clear volume accent pattern where beat 1 and beat 3 are louder:
 
 <details>
@@ -578,14 +578,14 @@ Create a drum pattern with a clear volume accent pattern where beat 1 and beat 3
 
 ```js
 setcpm(128/4)
-s("bd*4").bank("RolandTR909")
+$: s("bd*4").bank("RolandTR909")
   .gain("1 .5 .8 .5")
-s("hh*16").bank("RolandTR909")
+$: s("hh*16").bank("RolandTR909")
   .gain(".8 .3 .5 .3")
 ```
 </details>
 
-### Challenge 5: Complete Sound Palette
+### Challenge 5: Complete Sound Palette ⭐⭐⭐
 Using envelopes, create all four of these from a single sawtooth wave:
 1. A short pluck
 2. A long pad

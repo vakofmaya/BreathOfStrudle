@@ -552,7 +552,7 @@ $: note("<[c4,eb4,g4] [bb3,d4,f4]>")
 
 ## 4.10 Practice Challenges
 
-### Challenge 1: Filter Sweep
+### Challenge 1: Filter Sweep ⭐
 Create a sawtooth drone on C2 with a filter that sweeps from 200 Hz to 5000 Hz over 8 cycles:
 
 <details>
@@ -565,7 +565,7 @@ note("c2").s("sawtooth")
 ```
 </details>
 
-### Challenge 2: Resonant Bass Line
+### Challenge 2: Resonant Bass Line ⭐⭐
 Write a 4-note bass pattern using sawtooth with:
 - Cutoff at 500 Hz
 - Resonance at 15
@@ -587,7 +587,7 @@ note("c2 eb2 f2 g2").s("sawtooth")
 ```
 </details>
 
-### Challenge 3: HPF Buildup
+### Challenge 3: HPF Buildup ⭐⭐
 Create a full drum beat that uses a high-pass filter sweep to create a buildup effect. The HPF should sweep from 50 Hz to 5000 Hz over 8 cycles:
 
 <details>
@@ -600,7 +600,7 @@ s("bd*4, hh*8, ~ cp ~ cp").bank("RolandTR909")
 ```
 </details>
 
-### Challenge 4: Three-Filter Combo
+### Challenge 4: Three-Filter Combo ⭐⭐⭐
 Layer three patterns: one using LPF, one using HPF, and one using BPF, playing at the same time:
 
 <details>
@@ -628,7 +628,7 @@ $: s("rim(5,8)").bank("RolandTR909")
 ```
 </details>
 
-### Challenge 5: Vowel Bass
+### Challenge 5: Vowel Bass ⭐⭐⭐
 Create a bass line that "talks" using the vowel filter, cycling through all 5 vowels:
 
 <details>

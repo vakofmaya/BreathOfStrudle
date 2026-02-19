@@ -260,6 +260,15 @@ The numbers in the array are **intervals in semitones** from the root:
 
 > 💡 **Exercise:** Create a simple two-chord loop with `chord("<Cm Fm>").voicing()` and apply different synth sounds. Try `"sawtooth"`, `"triangle"`, `"square"`, and `"wt_flute"`.
 
+### Debugging Voicings
+
+If your chords sound too high, too low, or make unexpected jumps, remember:
+
+- `.voicing()` uses a **default voicing dictionary** that spreads chord tones across a comfortable range (roughly C3–C5)
+- Use `.anchor("c4")` to center voicings around a specific note
+- Use `.mode("below")` to force all notes below the anchor (useful for dark pads)
+- The voicing system applies **voice leading** — it tries to minimize note movement between consecutive chords, so the order of your chord progression matters
+
 ---
 
 ## 8.5 Arpeggios — Chords as Melodies
@@ -542,7 +551,7 @@ Understanding intervals helps you build custom chords and melodies:
 
 ## 8.10 Practice Challenges
 
-### Challenge 1: Chord Progression
+### Challenge 1: Chord Progression ⭐
 Write a 4-chord progression in C minor using `chord()` and `.voicing()`. Apply a pad-like envelope:
 
 <details>
@@ -558,7 +567,7 @@ chord("<Cm Fm Ab Bb>").voicing()
 ```
 </details>
 
-### Challenge 2: Pentatonic Melody
+### Challenge 2: Pentatonic Melody ⭐⭐
 Write a sparse melody using `n()` and `scale("C4:minor:pentatonic")`. Use no more than 4 notes per cycle, with rests:
 
 <details>
@@ -575,7 +584,7 @@ n("<0 ~ 4 ~ , ~ 2 ~ 5>")
 ```
 </details>
 
-### Challenge 3: Arpeggio
+### Challenge 3: Arpeggio ⭐⭐
 Create an arpeggio that follows a chord progression:
 
 <details>
@@ -592,7 +601,7 @@ n("<[0 2 4 7]*2 [0 2 4 6]*2 [-1 1 3 5]*2 [-2 0 2 4]*2>")
 ```
 </details>
 
-### Challenge 4: Generative Melody
+### Challenge 4: Generative Melody ⭐⭐⭐
 Create a melody that uses `irand()` or `sine` to generate notes, quantized to a scale:
 
 <details>
@@ -611,7 +620,7 @@ n(irand(8).segment(8))
 ```
 </details>
 
-### Challenge 5: Full Harmonic Stack
+### Challenge 5: Full Harmonic Stack ⭐⭐⭐
 Build a complete harmonic layer with bass root + chord pad + melody, all in the same key:
 
 <details>

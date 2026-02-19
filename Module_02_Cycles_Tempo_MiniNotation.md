@@ -494,7 +494,7 @@ s(`
 
 ## 2.6 Practice Challenges
 
-### Challenge 1: Recreate This Rhythm
+### Challenge 1: Recreate This Rhythm ⭐⭐
 Listen to a typical minimal techno beat and try to recreate it:
 - Kick on every beat (1, 2, 3, 4)
 - Open hi-hat on the "&" of beat 2
@@ -515,7 +515,7 @@ s("bd*4, [hh hh [hh oh] hh]*2, ~ cp ~ cp")
 ```
 </details>
 
-### Challenge 2: Euclidean Polyrhythm
+### Challenge 2: Euclidean Polyrhythm ⭐⭐⭐
 Create a polyrhythmic pattern with:
 - Kick: 3 beats over 8 steps
 - Snare: 2 beats over 5 steps
@@ -536,7 +536,7 @@ s("bd(3,8), sd(2,5), hh(7,12)")
 ```
 </details>
 
-### Challenge 3: Evolving Pattern
+### Challenge 3: Evolving Pattern ⭐⭐⭐
 Write a 4-cycle pattern where the kick pattern changes each cycle using angle brackets:
 
 ```js
@@ -556,4 +556,5 @@ s("<[bd ~ ~ ~] [bd ~ bd ~] [bd ~ [~ bd] ~] [bd [~ bd] bd ~]>, hh*8")
 
 ---
 
+**Previous:** [← Module 1 — The Strudel Environment](./Module_01_Strudel_Environment.md)
 **Next:** [Module 3 — Synths & Oscillators →](./Module_03_Synths_Oscillators.md)

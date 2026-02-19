@@ -446,7 +446,7 @@ $: s("crackle*2").density(0.03).gain(0.1)  // vinyl texture
 
 ## 5.11 Practice Challenges
 
-### Challenge 1: Drum Machine Comparison
+### Challenge 1: Drum Machine Comparison ⭐
 Write the same beat with three different banks. Listen to each and pick your favorite for a minimal techno context.
 
 <details>
@@ -459,7 +459,7 @@ s("bd sd [~ bd] sd, hh*8, ~ cp ~ cp")
 ```
 </details>
 
-### Challenge 2: Hi-Hat Humanization
+### Challenge 2: Hi-Hat Humanization ⭐⭐
 Create a 16th-note hi-hat pattern with:
 - Accent pattern (louder on beats)
 - Occasional open hi-hat
@@ -476,7 +476,7 @@ s("[hh hh hh <hh oh>]*4").bank("RolandTR909")
 ```
 </details>
 
-### Challenge 3: Breakbeat Remix
+### Challenge 3: Breakbeat Remix ⭐⭐⭐
 Load a breakbeat, slice it into 8 pieces, and create a new pattern from the slices:
 
 <details>
@@ -491,7 +491,7 @@ s("breaks165")
 ```
 </details>
 
-### Challenge 4: Full Drum Kit
+### Challenge 4: Full Drum Kit ⭐⭐
 Build a complete drum kit using only 909 samples with at least:
 - Kick, snare, closed hat, open hat (with cut group), rimshot
 

@@ -451,10 +451,10 @@ $: note("~ c5 ~ <c5 g4>").s("sine")
 
 ## 3.9 Practice Challenges
 
-### Challenge 1: Waveform ID
+### Challenge 1: Waveform ID ⭐
 Play each waveform one at a time (sine, sawtooth, square, triangle) on the same note. Close your eyes between changes and try to identify which is which by ear alone.
 
-### Challenge 2: Noise Drum Kit
+### Challenge 2: Noise Drum Kit ⭐⭐
 Build a complete drum loop using ONLY noise (no samples). You'll need:
 - Kick: use `note("c1").s("sine")` with short decay (ok, one oscillator)
 - Hi-hat: `white` noise with very short decay

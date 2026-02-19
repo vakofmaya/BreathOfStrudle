@@ -565,19 +565,19 @@ $: s("crackle*2").density(0.03).gain(0.1)
 
 ## 7.10 Practice Challenges
 
-### Challenge 1: Your Own Kick
+### Challenge 1: Your Own Kick ⭐⭐
 Design a kick that sounds different from the ones above. Experiment with:
 - Different `penv` and `pdecay` values
 - Using `triangle` instead of `sine`
 - Different amounts or types of distortion
 
-### Challenge 2: Mood Change
+### Challenge 2: Mood Change ⭐⭐
 Take the complete palette above and change the mood from dark (C minor) to bright by:
 - Changing bass notes to major scale tones
 - Changing pad chords to major chords
 - Changing the lead scale to `"C4:major:pentatonic"`
 
-### Challenge 3: Design a Sound You've Never Heard
+### Challenge 3: Design a Sound You've Never Heard ⭐⭐⭐
 Combine techniques in unexpected ways:
 - FM synthesis + filter envelope?
 - Wavetable + pitch envelope?

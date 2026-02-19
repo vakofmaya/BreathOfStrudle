@@ -499,6 +499,43 @@ $: note("c2 ~ <eb2 f2> ~").s("sine").lpf(200)
 
 Each `$:` line runs independently. You can modify and re-evaluate any single line without affecting others.
 
+### `superimpose(fn)` — Play Original + Modified Copy
+
+Play the pattern AND a transformed copy simultaneously — instant thickness:
+
+```js
+// Original + octave up copy
+note("c3 eb3 g3 c4").s("triangle")
+  .superimpose(x => x.add(note(12)))
+
+// Original + reversed copy
+s("bd sd hh cp").superimpose(rev)
+
+// Thicken a bass with a detuned copy
+note("c2!4").s("sawtooth")
+  .superimpose(x => x.add(note(0.1)).gain(0.4))
+```
+
+### `off(time, fn)` — Delayed Modified Copy
+
+Like `superimpose`, but the copy is **time-shifted** — perfect for call-and-response and canon effects:
+
+```js
+// Echo effect: copy plays 1/8 cycle later, an octave up
+note("c3 eb3 g3 c4").s("triangle")
+  .off(1/8, x => x.add(note(12)).gain(0.5))
+
+// Rhythmic doubling
+s("bd sd [~ bd] sd").off(1/16, x => x.gain(0.3))
+
+// Stacked canon: two offset copies
+note("0 2 4 6").scale("C3:minor").s("triangle")
+  .off(1/4, x => x.add(note(7)))
+  .off(1/8, x => x.add(note(12)).gain(0.3))
+```
+
+> **Tip:** `off` is one of the most powerful pattern functions in Strudel — with a single line you can turn a sparse melody into a rich, layered texture. It's the pattern-level equivalent of delay, but with full pitch and timbre control.
+
 ---
 
 ## 10.9 Combining Techniques — Real-World Examples
@@ -559,7 +596,7 @@ note("c2!4").s("sawtooth")
 
 ## 10.10 Practice Challenges
 
-### Challenge 1: Evolving Loop
+### Challenge 1: Evolving Loop ⭐
 Create a 4-beat drum loop that uses `.iter(4)` so the starting point shifts each cycle:
 
 <details>
@@ -572,7 +609,7 @@ s("bd [~ hh] sd [hh oh]").iter(4)
 ```
 </details>
 
-### Challenge 2: Conditional Fill
+### Challenge 2: Conditional Fill ⭐⭐
 Build a hi-hat pattern that plays a fill (double speed) every 4th cycle:
 
 <details>
@@ -586,7 +623,7 @@ s("hh*8").bank("RolandTR909")
 ```
 </details>
 
-### Challenge 3: Signal Modulation
+### Challenge 3: Signal Modulation ⭐⭐
 Create a pad where the filter cutoff, reverb amount, and pan all move with different signals:
 
 <details>
@@ -603,7 +640,7 @@ note("[c4,eb4,g4]").s("sawtooth")
 ```
 </details>
 
-### Challenge 4: Probability Chain
+### Challenge 4: Probability Chain ⭐⭐⭐
 Apply a chain of probability modifiers to create an evolving pattern:
 
 <details>
@@ -620,7 +657,7 @@ s("hh*16").bank("RolandTR909")
 ```
 </details>
 
-### Challenge 5: 16-Cycle Build
+### Challenge 5: 16-Cycle Build ⭐⭐⭐
 Create a pattern that builds in intensity over 16 cycles using saw signals:
 
 <details>
@@ -648,7 +685,8 @@ s("hh*16").bank("RolandTR909")
 7. **`.range(min, max)`** maps 0–1 signals to useful parameter ranges
 8. **`.slow(n)`** on signals controls modulation speed (higher = slower)
 9. **`stack`** = parallel, **`cat`** = sequential, **`arrange`** = multi-cycle structure
-10. **`$:` patterns** are the live coding equivalent — free-form, independently modifiable
+10. **`superimpose`** plays the original + a modified copy; **`off`** adds a time-shifted modified copy
+11. **`$:` patterns** are the live coding equivalent — free-form, independently modifiable
 
 ---
 
