@@ -1,6 +1,66 @@
 <div align="center">
 
+```
+
+                                  *  .  ✦        .    ˚    *        .   ✦
+                        .    ˚        _______________        ˚   .        *    .
+                   *        .       /  $: s("bd*4") \   *         .  ˚
+                      ✦    .      /  $: note("c2")    \       ✦            *
+                 .          *    /   .lpf(800).lpq(12) \          .   ˚
+                    ˚          /  $: s("hh*8, ~ cp")    \   .          ✦
+                *        .    /     .bank("TR909")  > |   \       *
+                   .   ✦    /_____________________________ \    .        ˚
+                          .'    __|________________|__    '.
+                ____     / ♪  /                        \  ♫ \     ____
+              /|    |   /   /  +======+====+======+===+  \   \   |    |\
+             | | @@ |  /  /   ||  +-+ | /\ | +--+ |   || \  \  | @@ | |
+             | | @@ | /  /    ||  |~| | \\ | | /| |   ||  \  \ | @@ | |
+             | | @@ |/  /     ||  |#| | \\ | |/ | |   ||   \  \| @@ | |
+             | |    |  /      ||  +-+ | /\ | +--+ |   ||    \  |    | |
+             | | @@ | /       |+======+====+======+===+|     \ | @@ | |
+             | | @@ |/        +========================+       \| @@ | |
+             | |    |    /\  ~       _  O  _       ~  /\        |    | |
+             | | @@ |   ||    *    / |/|\| \    *     ||       | @@ | |
+             | | @@ |   ||         |  | |  |          ||       | @@ | |
+             | |____|   ||  ~     _/ / | \ \_   ~     ||       |____| |
+             |/ SPKR/   ||       [__LAPTOP__]          ||       \SPKR\|
+             '______'   ||  +=+ +=+  @@@  +=+  +=+    ||       '______'
+               ))  ))    || *|#|~|#|  === |#| *|#|~   ||        ((  ((
+               ))  ))    ||  +=+ +=+      +=+  +=+    ||        ((  ((
+            ============+|| ===+===+=======+===+=== ===||+============
+           ####STAGE#####+=====+===+=======+===+======+=+####STAGE####
+          ====================================================================
+              *  ~             ~    *    ~             ~    *   ~
+          @@@@@@@@@@@@@@@@@ D A N C E  F L O O R @@@@@@@@@@@@@@@@@@@@@
+               \o/  \o/    \o/    \o/   \o/    \o/   \o/   \o/
+                |    |      |      |     |      |     |     |
+          *    / \  / \    / \    / \   / \    / \   / \   / \    ~
+              o/   \o   o/  \o/   o/  \o    \o/  o/   \o   o/
+              |     |   |    |    |    |     |   |     |   |
+          ~  / \   / \ / \  / \  / \  / \   / \ / \   / \ / \    *
+            \o/  \o/  \o/  \o/  \o/  \o/  \o/  \o/  \o/  \o/  \o/
+             |    |    |    |    |    |    |    |    |    |    |
+         ~  / \  / \  / \  / \  / \  / \  / \  / \  / \  / \  / \  ~
+          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                      *  c o d e  ->  p a t t e r n  ->  s o u n d  *
+                            t h e   f l o o r   i s   y o u r s
+
+```
+
 # 🌬️ Breath of Strudel
+
+#### `v0.0.3`
+
+[![GitHub tag](https://img.shields.io/github/v/tag/vakofmaya/BreathOfStrudle?style=flat-square&label=version&color=blueviolet)](https://github.com/vakofmaya/BreathOfStrudle/releases)
+[![License](https://img.shields.io/github/license/vakofmaya/BreathOfStrudle?style=flat-square&color=green)](https://github.com/vakofmaya/BreathOfStrudle)
+[![Platform](https://img.shields.io/badge/platform-strudel.cc-ff69b4?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjx0ZXh0IHk9IjIwIiBmb250LXNpemU9IjIwIj7wn461PC90ZXh0Pjwvc3ZnPg==)](https://strudel.cc/)
+[![Modules](https://img.shields.io/badge/modules-12%20%2B%20Final%20Project-blue?style=flat-square)](./README.md#course-modules)
+[![Difficulty](https://img.shields.io/badge/difficulty-beginner%20friendly-brightgreen?style=flat-square)](./README.md#who-this-course-is-for)
+[![Browser Based](https://img.shields.io/badge/setup-zero%20install%20%7C%20browser%20only-orange?style=flat-square)](https://strudel.cc/)
+[![Made with](https://img.shields.io/badge/lineage-TidalCycles%20%2F%20Strudel-9cf?style=flat-square)](https://tidalcycles.org/)
+[![Live Coding](https://img.shields.io/badge/live%20coding-algorave-black?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjx0ZXh0IHk9IjIwIiBmb250LXNpemU9IjIwIj7wn46kPC90ZXh0Pjwvc3ZnPg==)](https://toplap.org/)
+[![GitHub stars](https://img.shields.io/github/stars/vakofmaya/BreathOfStrudle?style=flat-square&color=yellow)](https://github.com/vakofmaya/BreathOfStrudle/stargazers)
 
 ### *A Complete Sound Design & Music Production Course*
 
