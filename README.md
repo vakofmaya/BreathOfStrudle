@@ -690,7 +690,33 @@ Looking for where a concept is first introduced vs. fully explained?
 | `audioin()` | — | Module 12 |
 | MIDI output | — | Module 12 |
 
+---
+
+### K. The Theory of Perfect Chords
+
+→ **[Appendix K — The Theory of Perfect Chords](./Appendix_K_Chord_Theory.md)**
+
+A deep dive into the music theory behind building chords that work — from the physics of why certain notes sound good together (overtone series, consonance, beating frequencies), through triads, seventh chords, extended harmony, inversions, and voicing techniques (close, open, drop-2), to genre-specific chord recipes for Minimal Techno, Deep House, Dub Techno, Ambient, Melodic Techno, Trance, Drum & Bass, Acid House, and Lo-Fi. Includes complete Strudel code examples, a guide to building custom voicing dictionaries with `addVoicings()`, chord design techniques (layering, detuning, sidechain), and 5 graded practice challenges.
+
+---
+
+### L. The Art of Scales
+
+→ **[Appendix L — The Art of Scales](./Appendix_L_Scale_Theory.md)**
+
+Everything you need to know about musical scales — how they're built, why each mode sounds different, and how to choose the right one for your track. Covers all 7 modes in depth (Ionian through Locrian), the minor scale family (natural, harmonic, melodic), pentatonic and blues scales, 14+ exotic scales from around the world (Hirajoshi, Hungarian Minor, Phrygian Dominant, Bhairav, whole tone, diminished, and more), a mood-based decision framework for scale selection, genre-specific recipes for 7 electronic genres, the complete 80+ Strudel scale reference, and advanced techniques like scale switching and layering.
+
+---
+
+### M. The Craft of Melody
+
+→ **[Appendix M — The Craft of Melody](./Appendix_M_Melody_Craft.md)**
+
+How to write melodies that work — from the five elements of a strong melody (contour, rhythm, repetition, variation, resolution) through motif development, stepwise motion vs. leaps, rhythmic techniques, tension and resolution arcs, call-and-response structures, and 8 generative melody methods in Strudel (`irand`, `perlin`, `sine.segment`, `.iter()`, `.superimpose()`). Includes genre-specific melody approaches for Minimal Techno, Melodic Techno, Ambient, Trance, Drum & Bass, and Acid, plus techniques for combining melody with effects and harmony.
+
 <div align="center">
+
+
 
 ### 🌬️
 
