@@ -61,6 +61,7 @@
 [![Made with](https://img.shields.io/badge/lineage-TidalCycles%20%2F%20Strudel-9cf?style=flat-square)](https://tidalcycles.org/)
 [![Live Coding](https://img.shields.io/badge/live%20coding-algorave-black?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjx0ZXh0IHk9IjIwIiBmb250LXNpemU9IjIwIj7wn46kPC90ZXh0Pjwvc3ZnPg==)](https://toplap.org/)
 [![GitHub stars](https://img.shields.io/github/stars/vakofmaya/BreathOfStrudle?style=flat-square&color=yellow)](https://github.com/vakofmaya/BreathOfStrudle/stargazers)
+[![Chat on Matrix](https://img.shields.io/badge/chat-Matrix-0dbd8b?style=flat-square&logo=matrix&logoColor=white)](https://matrix.to/#/%23breathofstrudel:matrix.org)
 
 ### *A Complete Sound Design & Music Production Course*
 
@@ -868,6 +869,12 @@ Not ready to write a PR? **[Open an issue](https://github.com/vakofmaya/BreathOf
 - Genres you'd like a recipe for
 
 Every issue helps shape the course. 🙏
+
+### 💬 Community Chat
+
+Join the conversation on Matrix — ask questions, share your tracks, find collaborators, or just hang out with other live coders.
+
+**→ [#breathofstrudel:matrix.org](https://matrix.to/#/%23breathofstrudel:matrix.org)**
 
 ---
 
