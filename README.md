@@ -783,6 +783,8 @@ How to write melodies that work — from the five elements of a strong melody (c
 
 → **[Advanced Cheat Sheet](./Cheat_Sheet_Advanced.md)** — Advanced tough-to-remember items that make performing easy. Filter envelopes, FM synthesis parameters, sidechain ducking setup, continuous signal modulation, pattern manipulation (time/random/conditional modifiers), voicing system, transition techniques, arrangement structure, MIDI/OSC output, sample slicing, and performance power-move recipes ready to copy-paste.
 
+→ **[Genre Alteration Cheat Sheet](./Cheat_Sheet_Genre_Alteration.md)** — How to transform the base Minimal Techno template into 11 different electronic genres. Each genre includes researched facts, origin story, sonic character, parameter comparison table, and a complete working Strudel setup: Deep House, Dub Techno, Acid House, Psytrance, Drum & Bass, Lo-Fi Hip Hop, Ambient, Synthwave, Melodic Techno, Trance, and Industrial Techno.
+
 <div align="center">
 
 
