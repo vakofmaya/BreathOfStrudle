@@ -775,6 +775,14 @@ Everything you need to know about musical scales — how they're built, why each
 
 How to write melodies that work — from the five elements of a strong melody (contour, rhythm, repetition, variation, resolution) through motif development, stepwise motion vs. leaps, rhythmic techniques, tension and resolution arcs, call-and-response structures, and 8 generative melody methods in Strudel (`irand`, `perlin`, `sine.segment`, `.iter()`, `.superimpose()`). Includes genre-specific melody approaches for Minimal Techno, Melodic Techno, Ambient, Trance, Drum & Bass, and Acid, plus techniques for combining melody with effects and harmony.
 
+---
+
+### 📋 Cheat Sheets
+
+→ **[Beginner Cheat Sheet](./Cheat_Sheet_Beginner.md)** — All basic memory items required to perform live. Keyboard shortcuts, tempo setup, mini-notation, waveforms, drum banks, filters, envelopes, effects, chords, scales, sound design recipes, and common mistakes — in a quick-scan table format ordered by frequency of use.
+
+→ **[Advanced Cheat Sheet](./Cheat_Sheet_Advanced.md)** — Advanced tough-to-remember items that make performing easy. Filter envelopes, FM synthesis parameters, sidechain ducking setup, continuous signal modulation, pattern manipulation (time/random/conditional modifiers), voicing system, transition techniques, arrangement structure, MIDI/OSC output, sample slicing, and performance power-move recipes ready to copy-paste.
+
 <div align="center">
 
 
