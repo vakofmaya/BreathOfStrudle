@@ -329,8 +329,11 @@ Any sample name starting with `wt_` is treated as a wavetable (auto-looped):
 
 ```js
 // Flute wavetable
+samples('bubo:waveforms');
 note("c3 e3 g3 c4").s("wt_flute")._scope()
 ```
+
+> 💡 **Note:** Don't forget to import the waveform samples like that: `samples('bubo:waveforms');`
 
 ### Exploring Wavetables
 
