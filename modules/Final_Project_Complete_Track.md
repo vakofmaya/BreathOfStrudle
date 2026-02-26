@@ -883,4 +883,4 @@ You've built a complete Minimal Techno track from scratch using every technique 
 
 ---
 
-**Back to:** [← Course Overview](./README.md)
+**Back to:** [← Course Overview](../README.md)

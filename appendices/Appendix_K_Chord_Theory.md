@@ -1148,5 +1148,5 @@ $: s("bd*4").bank("RolandTR909")
 
 ---
 
-**← Back to [Module 8 — Writing Chords & Melodies](./Module_08_Chords_Melodies.md)**
-**← Back to [README — Course Overview](./README.md)**
+**← Back to [Module 8 — Writing Chords & Melodies](../modules/Module_08_Chords_Melodies.md)**
+**← Back to [README — Course Overview](../README.md)**

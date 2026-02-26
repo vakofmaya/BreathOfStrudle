@@ -1065,6 +1065,6 @@ $: n(irand(5).segment(8)).scale("C4:minor:pentatonic")
 
 ---
 
-**← Back to [Module 8 — Writing Chords & Melodies](./Module_08_Chords_Melodies.md)**
+**← Back to [Module 8 — Writing Chords & Melodies](../modules/Module_08_Chords_Melodies.md)**
 **← Back to [Appendix K — The Theory of Perfect Chords](./Appendix_K_Chord_Theory.md)**
-**← Back to [README — Course Overview](./README.md)**
+**← Back to [README — Course Overview](../README.md)**

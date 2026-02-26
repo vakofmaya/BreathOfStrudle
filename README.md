@@ -4,7 +4,7 @@
 
 # 🌬️ Breath of Strudel
 
-#### `v0.0.3`
+#### `v0.2.0`
 
 [![GitHub tag](https://img.shields.io/github/v/tag/vakofmaya/BreathOfStrudle?style=flat-square&label=version&color=blueviolet)](https://github.com/vakofmaya/BreathOfStrudle/releases)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey?style=flat-square&logo=creativecommons)](https://creativecommons.org/licenses/by/4.0/)
@@ -218,7 +218,7 @@ By the time you complete this course, you'll be able to:
 <td width="50">📍</td>
 <td>
 
-#### [Module 1 — The Strudel Environment](./Module_01_Strudel_Environment.md)
+#### [Module 1 — The Strudel Environment](./modules/Module_01_Strudel_Environment.md)
 What Strudel is, how it works, the REPL interface, your very first sound. If you've never opened Strudel before, start here.
 
 </td>
@@ -227,7 +227,7 @@ What Strudel is, how it works, the REPL interface, your very first sound. If you
 <td>🕐</td>
 <td>
 
-#### [Module 2 — Cycles, Tempo & Mini-Notation](./Module_02_Cycles_Tempo_MiniNotation.md)
+#### [Module 2 — Cycles, Tempo & Mini-Notation](./modules/Module_02_Cycles_Tempo_MiniNotation.md)
 How Strudel thinks about time (cycles, not bars). Setting tempo with `setcpm()`. The complete mini-notation syntax — sequences, rests, subdivision, multiplication, Euclidean rhythms. This is the grammar of everything that follows.
 
 </td>
@@ -245,7 +245,7 @@ How Strudel thinks about time (cycles, not bars). Setting tempo with `setcpm()`.
 <td width="50">🔊</td>
 <td>
 
-#### [Module 3 — Synths & Oscillators](./Module_03_Synths_Oscillators.md)
+#### [Module 3 — Synths & Oscillators](./modules/Module_03_Synths_Oscillators.md)
 The four basic waveforms (sine, saw, square, triangle), noise sources, FM synthesis, and wavetable synthesis. Practical recipes for techno sounds.
 
 </td>
@@ -254,7 +254,7 @@ The four basic waveforms (sine, saw, square, triangle), noise sources, FM synthe
 <td>🎛️</td>
 <td>
 
-#### [Module 4 — Subtractive Synthesis](./Module_04_Subtractive_Synthesis.md)
+#### [Module 4 — Subtractive Synthesis](./modules/Module_04_Subtractive_Synthesis.md)
 Filters (LPF, HPF, BPF, Vowel), resonance, filter types (`12db`, `ladder`, `24db`), filter envelopes. The most important sound-shaping technique in electronic music.
 
 </td>
@@ -263,7 +263,7 @@ Filters (LPF, HPF, BPF, Vowel), resonance, filter types (`12db`, `ladder`, `24db
 <td>🥁</td>
 <td>
 
-#### [Module 5 — Samples & Drum Machines](./Module_05_Samples_DrumMachines.md)
+#### [Module 5 — Samples & Drum Machines](./modules/Module_05_Samples_DrumMachines.md)
 Default samples, classic drum machine banks (TR-808, TR-909, CR-78, LinnDrum), sample selection, cut groups, custom loading, and granular techniques (chop, slice, splice).
 
 </td>
@@ -272,7 +272,7 @@ Default samples, classic drum machine banks (TR-808, TR-909, CR-78, LinnDrum), s
 <td>📈</td>
 <td>
 
-#### [Module 6 — Envelopes & Dynamics](./Module_06_Envelopes_Dynamics.md)
+#### [Module 6 — Envelopes & Dynamics](./modules/Module_06_Envelopes_Dynamics.md)
 ADSR amplitude envelopes, pitch envelopes (for kick drum design), filter envelopes, dynamics control with gain, velocity, and compression. How sound changes over time.
 
 </td>
@@ -290,7 +290,7 @@ ADSR amplitude envelopes, pitch envelopes (for kick drum design), filter envelop
 <td width="50">🎨</td>
 <td>
 
-#### [Module 7 — Building Core Sounds](./Module_07_Building_Core_Sounds.md)
+#### [Module 7 — Building Core Sounds](./modules/Module_07_Building_Core_Sounds.md)
 Step-by-step design of every element in a techno track: kick (3 approaches), hi-hat, clap, bass (5 styles), pad (5 styles), lead (5 styles), percussion, and texture. Includes a complete palette playing all elements together.
 
 </td>
@@ -299,7 +299,7 @@ Step-by-step design of every element in a techno track: kick (3 approaches), hi-
 <td>🎹</td>
 <td>
 
-#### [Module 8 — Writing Chords & Melodies](./Module_08_Chords_Melodies.md)
+#### [Module 8 — Writing Chords & Melodies](./modules/Module_08_Chords_Melodies.md)
 Note names, MIDI numbers, and scale degrees. Scales for techno. Chord progressions with `chord().voicing()`. Arpeggios. Melody writing (manual, scale-based, generative). Transposition. Music theory made practical.
 
 </td>
@@ -317,7 +317,7 @@ Note names, MIDI numbers, and scale degrees. Scales for techno. Chord progressio
 <td width="50">🌊</td>
 <td>
 
-#### [Module 9 — Effects & Spatial Processing](./Module_09_Effects_Spatial.md)
+#### [Module 9 — Effects & Spatial Processing](./modules/Module_09_Effects_Spatial.md)
 Delay (with tempo sync), reverb (shaping and recipes), orbits for independent buses, distortion, bit crush, phaser, tremolo. **Sidechain ducking** — the defining effect of Minimal Techno. Panning and stereo width.
 
 </td>
@@ -326,7 +326,7 @@ Delay (with tempo sync), reverb (shaping and recipes), orbits for independent bu
 <td>🔄</td>
 <td>
 
-#### [Module 10 — Pattern Manipulation & Variation](./Module_10_Pattern_Manipulation.md)
+#### [Module 10 — Pattern Manipulation & Variation](./modules/Module_10_Pattern_Manipulation.md)
 Time modifiers (`slow`, `fast`, `rev`, `iter`, `ply`), swing, random modifiers (`sometimes`, `rarely`, `degrade`), conditional modifiers (`lastOf`, `when`, `chunk`), continuous signals (`sine`, `saw`, `perlin`) for modulation, and layering constructs (`stack`, `cat`, `arrange`). Turn static loops into living music.
 
 </td>
@@ -344,7 +344,7 @@ Time modifiers (`slow`, `fast`, `rev`, `iter`, `ply`), swing, random modifiers (
 <td width="50">🏗️</td>
 <td>
 
-#### [Module 11 — Structuring a Full Track](./Module_11_Track_Structure.md)
+#### [Module 11 — Structuring a Full Track](./modules/Module_11_Track_Structure.md)
 Minimal Techno arrangement (intro → build → main → breakdown → drop → outro). Three arrangement methods: `arrange()`, `cat()`, `$:` additive. Transition techniques: filter sweeps, reverb washes, risers, snare rolls. A complete scripted ~4-minute track.
 
 </td>
@@ -353,7 +353,7 @@ Minimal Techno arrangement (intro → build → main → breakdown → drop → 
 <td>🎤</td>
 <td>
 
-#### [Module 12 — Live Performance Techniques](./Module_12_Live_Performance.md)
+#### [Module 12 — Live Performance Techniques](./modules/Module_12_Live_Performance.md)
 The `$:` pattern system, phased performance workflow, real-time modification techniques, muting and hush, MIDI/OSC output, error recovery, and a complete performance template. A performance checklist for before every set.
 
 </td>
@@ -371,7 +371,7 @@ The `$:` pattern system, phased performance workflow, real-time modification tec
 <td width="50">🏁</td>
 <td>
 
-#### [Final Project — Building a Complete Minimal Techno Track](./Final_Project_Complete_Track.md)
+#### [Final Project — Building a Complete Minimal Techno Track](./modules/Final_Project_Complete_Track.md)
 A guided, research-informed walkthrough of building a complete track called **"Pulse"**. Includes analysis of what makes great minimal techno (Robert Hood, Richie Hawtin, Ricardo Villalobos), 7 production rules, element-by-element sound design with rationale for every parameter, a full scripted arrangement (~144 bars), a live performance template, and a customization guide to make the track your own.
 
 </td>
@@ -675,8 +675,6 @@ Strudel runs in the browser and doesn't have a built-in "export to WAV" button. 
 - Record the MIDI and render audio in the DAW with your own synth plugins
 - Best for production-quality output
 
-**Method 5: SuperCollider Backend**
-- If using [strudel-cli](https://github.com/tidalcycles/strudel) or a SuperCollider backend, you can record directly to WAV using SuperCollider's `s.record` function
 
 ---
 
@@ -709,7 +707,7 @@ Looking for where a concept is first introduced vs. fully explained?
 
 ### K. The Theory of Perfect Chords
 
-→ **[Appendix K — The Theory of Perfect Chords](./Appendix_K_Chord_Theory.md)**
+→ **[Appendix K — The Theory of Perfect Chords](./appendices/Appendix_K_Chord_Theory.md)**
 
 A deep dive into the music theory behind building chords that work — from the physics of why certain notes sound good together (overtone series, consonance, beating frequencies), through triads, seventh chords, extended harmony, inversions, and voicing techniques (close, open, drop-2), to genre-specific chord recipes for Minimal Techno, Deep House, Dub Techno, Ambient, Melodic Techno, Trance, Drum & Bass, Acid House, and Lo-Fi. Includes complete Strudel code examples, a guide to building custom voicing dictionaries with `addVoicings()`, chord design techniques (layering, detuning, sidechain), and 5 graded practice challenges.
 
@@ -717,7 +715,7 @@ A deep dive into the music theory behind building chords that work — from the 
 
 ### L. The Art of Scales
 
-→ **[Appendix L — The Art of Scales](./Appendix_L_Scale_Theory.md)**
+→ **[Appendix L — The Art of Scales](./appendices/Appendix_L_Scale_Theory.md)**
 
 Everything you need to know about musical scales — how they're built, why each mode sounds different, and how to choose the right one for your track. Covers all 7 modes in depth (Ionian through Locrian), the minor scale family (natural, harmonic, melodic), pentatonic and blues scales, 14+ exotic scales from around the world (Hirajoshi, Hungarian Minor, Phrygian Dominant, Bhairav, whole tone, diminished, and more), a mood-based decision framework for scale selection, genre-specific recipes for 7 electronic genres, the complete 80+ Strudel scale reference, and advanced techniques like scale switching and layering.
 
@@ -725,19 +723,27 @@ Everything you need to know about musical scales — how they're built, why each
 
 ### M. The Craft of Melody
 
-→ **[Appendix M — The Craft of Melody](./Appendix_M_Melody_Craft.md)**
+→ **[Appendix M — The Craft of Melody](./appendices/Appendix_M_Melody_Craft.md)**
 
 How to write melodies that work — from the five elements of a strong melody (contour, rhythm, repetition, variation, resolution) through motif development, stepwise motion vs. leaps, rhythmic techniques, tension and resolution arcs, call-and-response structures, and 8 generative melody methods in Strudel (`irand`, `perlin`, `sine.segment`, `.iter()`, `.superimpose()`). Includes genre-specific melody approaches for Minimal Techno, Melodic Techno, Ambient, Trance, Drum & Bass, and Acid, plus techniques for combining melody with effects and harmony.
 
 ---
 
+### N. The Science of Rhythm
+
+→ **[Appendix N — The Science of Rhythm](./appendices/Appendix_N_Drum_Theory.md)**
+
+Everything you need to know about drums and rhythm — from the physics of why beats make you move (entrainment, syncopation, micro-timing), through the 16th-note grid system, drum kit anatomy and frequency mapping, electronic adaptations of acoustic rudiments (paradiddles, flams, ghost notes, drags), four-on-the-floor and beyond (syncopated kicks, half-time, breakbeats), a complete Euclidean rhythm reference table with world music origins (tresillo, cinquillo, clave, Bossa Nova), velocity shaping and swing, polyrhythms and polymeters, hi-hat artistry, genre-specific drum recipes for 9 electronic genres (Minimal Techno, Deep House, Dub Techno, Acid House, Drum & Bass, Industrial Techno, Trance, Lo-Fi, Breakbeat), fill and transition techniques, and 5 graded practice challenges with working Strudel code.
+
+---
+
 ### 📋 Cheat Sheets
 
-→ **[Beginner Cheat Sheet](./Cheat_Sheet_Beginner.md)** — All basic memory items required to perform live. Keyboard shortcuts, tempo setup, mini-notation, waveforms, drum banks, filters, envelopes, effects, chords, scales, sound design recipes, and common mistakes — in a quick-scan table format ordered by frequency of use.
+→ **[Beginner Cheat Sheet](./cheat_sheets/Cheat_Sheet_Beginner.md)** — All basic memory items required to perform live. Keyboard shortcuts, tempo setup, mini-notation, waveforms, drum banks, filters, envelopes, effects, chords, scales, sound design recipes, and common mistakes — in a quick-scan table format ordered by frequency of use.
 
-→ **[Advanced Cheat Sheet](./Cheat_Sheet_Advanced.md)** — Advanced tough-to-remember items that make performing easy. Filter envelopes, FM synthesis parameters, sidechain ducking setup, continuous signal modulation, pattern manipulation (time/random/conditional modifiers), voicing system, transition techniques, arrangement structure, MIDI/OSC output, sample slicing, and performance power-move recipes ready to copy-paste.
+→ **[Advanced Cheat Sheet](./cheat_sheets/Cheat_Sheet_Advanced.md)** — Advanced tough-to-remember items that make performing easy. Filter envelopes, FM synthesis parameters, sidechain ducking setup, continuous signal modulation, pattern manipulation (time/random/conditional modifiers), voicing system, transition techniques, arrangement structure, MIDI/OSC output, sample slicing, and performance power-move recipes ready to copy-paste.
 
-→ **[Genre Alteration Cheat Sheet](./Cheat_Sheet_Genre_Alteration.md)** — How to transform the base Minimal Techno template into 11 different electronic genres. Each genre includes researched facts, origin story, sonic character, parameter comparison table, and a complete working Strudel setup: Deep House, Dub Techno, Acid House, Psytrance, Drum & Bass, Lo-Fi Hip Hop, Ambient, Synthwave, Melodic Techno, Trance, and Industrial Techno.
+→ **[Genre Alteration Cheat Sheet](./cheat_sheets/Cheat_Sheet_Genre_Alteration.md)** — How to transform the base Minimal Techno template into 11 different electronic genres. Each genre includes researched facts, origin story, sonic character, parameter comparison table, and a complete working Strudel setup: Deep House, Dub Techno, Acid House, Psytrance, Drum & Bass, Lo-Fi Hip Hop, Ambient, Synthwave, Melodic Techno, Trance, and Industrial Techno.
 
 <div align="center">
 

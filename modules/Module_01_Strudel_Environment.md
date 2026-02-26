@@ -395,5 +395,5 @@ s("bd sd, hh*8").bank("RolandCR78")
 
 ---
 
-**Previous:** [← Course Overview](./README.md)
+**Previous:** [← Course Overview](../README.md)
 **Next:** [Module 2 — Cycles, Tempo & Mini-Notation →](./Module_02_Cycles_Tempo_MiniNotation.md)

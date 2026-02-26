@@ -933,7 +933,7 @@ $: n("<[0 1 2 ~ 4 ~ 2 ~] [3 4 5 ~ 0 ~ 5 ~] [5 4 2 ~ 0 ~ 2 ~] [6 5 3 ~ 1 ~ 3 ~]>"
 
 ---
 
-**← Back to [Module 8 — Writing Chords & Melodies](./Module_08_Chords_Melodies.md)**
+**← Back to [Module 8 — Writing Chords & Melodies](../modules/Module_08_Chords_Melodies.md)**
 **← Back to [Appendix K — The Theory of Perfect Chords](./Appendix_K_Chord_Theory.md)**
 **← Back to [Appendix L — The Art of Scales](./Appendix_L_Scale_Theory.md)**
-**← Back to [README — Course Overview](./README.md)**
+**← Back to [README — Course Overview](../README.md)**
