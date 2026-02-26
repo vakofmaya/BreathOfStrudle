@@ -848,6 +848,19 @@ Join the conversation on Matrix — ask questions, share your tracks, find colla
 
 ---
 
+## Contributors
+
+Thank you to everyone who has helped improve this course! 🙏
+
+| Contributor | Contribution |
+|-------------|-------------|
+| [![MrXlebNick](https://github.com/MrXlebNick.png?size=40)](https://github.com/MrXlebNick) **[@MrXlebNick](https://github.com/MrXlebNick)** | Wavetable import fix ([PR #5](https://github.com/vakofmaya/BreathOfStrudle/pull/5)) |
+| [![denisfitz57](https://github.com/denisfitz57.png?size=40)](https://github.com/denisfitz57) **[@denisfitz57](https://github.com/denisfitz57)** | Bug reports & issue feedback |
+
+> Want to see your name here? Check the [contribution guide](#how-to-contribute) above!
+
+---
+
 ## License
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
