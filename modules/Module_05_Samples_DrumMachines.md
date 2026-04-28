@@ -110,7 +110,7 @@ s("bd sd, hh*8").bank("RolandTR808")
 s("bd sd, hh*8").bank("RolandTR909")
 
 // Roland CR-78 — vintage, lo-fi
-s("bd sd, hh*8").bank("RolandCR78")
+s("bd sd, hh*8").bank("rolandcompurhythm78")
 
 // LinnDrum — 80s classic
 s("bd sd, hh*8").bank("LinnDrum")
@@ -132,7 +132,7 @@ s("bd sd, hh*8").bank("<RolandTR808 RolandTR909>")
 ```js
 // Different machine every 4 cycles
 s("bd sd [~ bd] sd, hh*8")
-  .bank("<RolandTR808 RolandTR909 RolandCR78 LinnDrum>")
+  .bank("<RolandTR808 RolandTR909 rolandcompurhythm78 LinnDrum>")
 ```
 
 ### Common Banks for Minimal Techno
@@ -142,7 +142,7 @@ s("bd sd [~ bd] sd, hh*8")
 | `RolandTR909` | Punchy, snappy, bright hats | **Primary techno kit** |
 | `RolandTR808` | Deep, boomy, long decay | Sub kicks, claps, cowbell |
 | `AkaiLinn` | Tight, compressed | Clean, tight beats |
-| `RolandCR78` | Vintage, lo-fi | Retro, stripped-back |
+| `rolandcompurhythm78` | Vintage, lo-fi | Retro, stripped-back |
 
 ### Sound Aliases
 
@@ -428,7 +428,7 @@ setcpm(128/4)
 $: s("bd*4").bank("RolandTR909")
 $: s("~ cp ~ cp").bank("RolandTR808").room(0.1)
 $: s("hh*16").bank("RolandTR909").gain(".5 .3 .7 .3").hpf(6000)
-$: s("rim(5,16)").bank("RolandCR78").gain(0.3).pan(rand)
+$: s("rim(5,16)").bank("rolandcompurhythm78").gain(0.3).pan(rand)
 ```
 
 ### Pattern 5: With Texture
@@ -455,7 +455,7 @@ Write the same beat with three different banks. Listen to each and pick your fav
 ```js
 setcpm(128/4)
 s("bd sd [~ bd] sd, hh*8, ~ cp ~ cp")
-  .bank("<RolandTR909 RolandTR808 RolandCR78>")
+  .bank("<RolandTR909 RolandTR808 rolandcompurhythm78>")
 ```
 </details>
 

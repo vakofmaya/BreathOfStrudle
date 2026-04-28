@@ -497,7 +497,7 @@ $: s("crackle*2").density(0.03).gain(0.08)
 |-----------|-----|-----------|----------|
 | `RolandTR808` | 1980 | Boomy, deep, long decay | Hip-hop, electro, deep techno |
 | `RolandTR909` | 1983 | Punchy, snappy, bright | House, techno (industry standard) |
-| `RolandCR78` | 1978 | Vintage, lo-fi, organic | Retro, minimal |
+| `rolandcompurhythm78` | 1978 | Vintage, lo-fi, organic | Retro, minimal |
 | `LinnDrum` | 1982 | Clean, crisp, 80s pop | Synthwave, electro |
 | `AkaiXR10` | 1988 | Raw, industrial | Dark techno, industrial |
 
@@ -539,7 +539,7 @@ $: s("crackle*2").density(0.03).gain(0.08)
 | **Tempo** | `setcpm()`, `setcps()`, `.cpm()` |
 | **Swing** | `.swingBy()` |
 | **Control** | `hush`, `._scope()` |
-| **I/O** | `.midi()`, `.osc()`, `audioin()` |
+| **I/O** | `.midi()`, `.osc()` |
 
 ### E. Resources
 
@@ -700,7 +700,6 @@ Looking for where a concept is first introduced vs. fully explained?
 | `superimpose` & `off` | — | Module 10 |
 | Track arrangement | — | Module 11 |
 | Live performance | — | Module 12 |
-| `audioin()` | — | Module 12 |
 | MIDI output | — | Module 12 |
 
 ---
@@ -744,6 +743,8 @@ Everything you need to know about drums and rhythm — from the physics of why b
 → **[Advanced Cheat Sheet](./cheat_sheets/Cheat_Sheet_Advanced.md)** — Advanced tough-to-remember items that make performing easy. Filter envelopes, FM synthesis parameters, sidechain ducking setup, continuous signal modulation, pattern manipulation (time/random/conditional modifiers), voicing system, transition techniques, arrangement structure, MIDI/OSC output, sample slicing, and performance power-move recipes ready to copy-paste.
 
 → **[Genre Alteration Cheat Sheet](./cheat_sheets/Cheat_Sheet_Genre_Alteration.md)** — How to transform the base Minimal Techno template into 11 different electronic genres. Each genre includes researched facts, origin story, sonic character, parameter comparison table, and a complete working Strudel setup: Deep House, Dub Techno, Acid House, Psytrance, Drum & Bass, Lo-Fi Hip Hop, Ambient, Synthwave, Melodic Techno, Trance, and Industrial Techno.
+
+→ **[Song Starters Cheat Sheet](./cheat_sheets/Cheat_Sheet_Song_Starters.md)** — 25 ready-to-paste deep/minimal techno openers for when the audience walks in. Organized into 5 mood categories (Fog & Atmosphere, Pulse & Heartbeat, Deep Currents, Tension & Edge, Groove & Motion), each with an evocative name, minimum 3 elements, and variety across tempo, key, timbre, and effects. Includes a researched Song Starter Formula, a suggested 30–45 minute set flow, and a quick reference table.
 
 <div align="center">
 
@@ -855,7 +856,7 @@ Thank you to everyone who has helped improve this course! 🙏
 | Contributor | Contribution |
 |-------------|-------------|
 | [![MrXlebNick](https://github.com/MrXlebNick.png?size=40)](https://github.com/MrXlebNick) **[@MrXlebNick](https://github.com/MrXlebNick)** | Wavetable import fix ([PR #5](https://github.com/vakofmaya/BreathOfStrudle/pull/5)) |
-| [![denisfitz57](https://github.com/denisfitz57.png?size=40)](https://github.com/denisfitz57) **[@denisfitz57](https://github.com/denisfitz57)** | Bug reports & issue feedback |
+| [![denisfitz57](https://github.com/denisfitz57.png?size=0)](https://github.com/denisfitz57) **[@denisfitz57](https://github.com/denisfitz57)** | Bug reports & issue feedback |
 
 > Want to see your name here? Check the [contribution guide](#how-to-contribute) above!
 

@@ -268,7 +268,7 @@ If audio stops working:
 Click the **Sounds** tab in the toolbar. You'll see a searchable list of all available samples:
 
 - **Drum hits:** `bd`, `sd`, `hh`, `oh`, `cp`, `mt`, `ht`, `lt`, `rim`, `cb`, `cr`, `rd`
-- **Drum machines:** `RolandTR808`, `RolandTR909`, `RolandCR78`, `LinnDrum`, and many more
+- **Drum machines:** `RolandTR808`, `RolandTR909`, `rolandcompurhythm78`, `LinnDrum`, and many more
 - **Instruments:** Various acoustic and electronic instrument samples
 - **Wavetables:** 1000+ single-cycle waveforms prefixed with `wt_`
 
@@ -374,7 +374,7 @@ Try at least 3 different samples from the Sounds browser. Play them in a pattern
 s("bd cp rim cb")
 // or try different drum machines:
 s("bd sd, hh*8").bank("RolandTR808")
-s("bd sd, hh*8").bank("RolandCR78")
+s("bd sd, hh*8").bank("rolandcompurhythm78")
 ```
 </details>
 

@@ -319,7 +319,6 @@ note("0 2 4 6").scale("C3:minor").s("triangle")
 | `ccn(74).ccv(sine.segment(16).range(0,127)).midi()` | MIDI CC |
 | `midi_clock().midi()` | Sync clock to hardware |
 | `.osc()` | Send OSC messages |
-| `audioin()` | Process live mic/line input |
 
 ---
 

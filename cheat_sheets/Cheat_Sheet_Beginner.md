@@ -102,7 +102,7 @@ setcpm(128/4)   // 128 BPM, 4 beats/cycle, 1 cycle = 1 bar
 |------|-----------|------|
 | **RolandTR909** | Punchy, standard techno | `.bank("RolandTR909")` |
 | **RolandTR808** | Boomy, deep | `.bank("RolandTR808")` |
-| **RolandCR78** | Vintage, lo-fi | `.bank("RolandCR78")` |
+| **rolandcompurhythm78** | Vintage, lo-fi | `.bank("rolandcompurhythm78")` |
 | **LinnDrum** | Clean, 80s | `.bank("LinnDrum")` |
 
 ### Sample Variants & Cut Groups

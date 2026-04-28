@@ -835,7 +835,7 @@ n("0 2 4 5").scale("C4:lydian")
 .bank("RolandTR808")
 
 // Switch to CR-78 for vintage character
-.bank("RolandCR78")
+.bank("rolandcompurhythm78")
 
 // Pattern the bank for variety
 .bank("<RolandTR909 RolandTR808>")

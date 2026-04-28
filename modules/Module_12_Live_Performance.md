@@ -370,24 +370,7 @@ note("c3 eb3 g3 bb3").osc()
 
 ---
 
-## 12.9 Live Audio Input — `audioin()`
-
-Strudel can process **live audio** from your microphone or audio interface, enabling hybrid performances where you run real instruments through Strudel's pattern engine:
-
-```js
-// Process live input through Strudel's effects
-audioin().lpf(sine.range(200, 4000).slow(8)).room(0.3)
-
-// Rhythmic gating of live input
-audioin().struct("x ~ x ~ x ~ [x x] ~").gain(0.8)
-```
-
-> [!NOTE]
-> Your browser will ask for microphone permission. This works best with an external audio interface. For live performance, connect a synth, guitar, or microphone and process it through Strudel's filters, effects, and pattern engine in real time.
-
----
-
-## 12.10 Visual Feedback
+## 12.9 Visual Feedback
 
 ### Oscilloscope — `._scope()`
 
@@ -410,7 +393,7 @@ Strudel's REPL shows a pianoroll-style visualization by default, showing event p
 
 ---
 
-## 12.11 Advanced Performance Concepts
+## 12.10 Advanced Performance Concepts
 
 ### Pre-Mapped Variations
 
